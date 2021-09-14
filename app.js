@@ -92,7 +92,7 @@ function translatePage(lang, score) {
   } else {
 
     // Translate to English
-    language.setAttribute('src', '/images/spanish.png');
+    language.setAttribute('src', 'images/spanish.png');
     language.setAttribute('alt', 'Spanish');
     pageLanguage.setAttribute('lang', 'en')
     pageTitle.textContent = 'Should you hire me?'
