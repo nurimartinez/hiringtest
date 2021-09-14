@@ -77,7 +77,7 @@ function translatePage(lang, score) {
   if(lang === 'Spanish') {
 
     // Translate to Spanish
-    language.setAttribute('src', '/images/english.png');
+    language.setAttribute('src', 'images/english.png');
     language.setAttribute('alt', 'English');
     pageLanguage.setAttribute('lang', 'es')
     pageTitle.textContent = '¿Deberías contratarme?'
