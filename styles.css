@@ -1,0 +1,190 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #54436b;
+  background-color: #f8f6fa;
+  line-height: 1;
+}
+
+header {
+  width: 100%;
+}
+
+header #language {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  width: 50px;
+  cursor: pointer;
+}
+
+header img {
+  display: block;
+  width: 70%;
+  max-width: 175px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #50cb93;
+  font-size: 2.4rem;
+  letter-spacing: -0.1rem;
+  margin: 0.3em 0.7em;
+}
+
+main {
+  width: 87%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+main form input, main form label {
+  cursor: pointer;
+}
+
+main form .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #c2bbff;
+  -webkit-box-shadow: 3px 3px 7px #5d5d5d;
+          box-shadow: 3px 3px 7px #5d5d5d;
+}
+
+main form .question h2 {
+  margin-top: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main form .answers {
+  width: 50px;
+  text-align: left;
+}
+
+main form .answers div:first-child {
+  margin-bottom: 0.5em;
+}
+
+main form input[type="submit"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  background-color: #54436b;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 7px #5d5d5d;
+          box-shadow: 3px 3px 7px #5d5d5d;
+  cursor: pointer;
+}
+
+main #result {
+  padding: 2em;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #54436b;
+  -webkit-box-shadow: 3px 3px 7px #5d5d5d;
+          box-shadow: 3px 3px 7px #5d5d5d;
+}
+
+main #result .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #result h2 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #c2bbff;
+}
+
+main #result p {
+  line-height: 1.3rem;
+  color: #f8f6fa;
+}
+
+main #result .icons {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #result .icons a {
+  text-decoration: none;
+  color: #c2bbff;
+}
+
+main #result .icons i {
+  font-size: 2rem;
+  color: #c2bbff;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+  form {
+    margin-top: 0.8em;
+  }
+  form h2 {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

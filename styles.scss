@@ -1,0 +1,170 @@
+// Variables
+$primary-color: #54436b;
+$secondary-color: #c2bbff;
+$third-color: #50cb93;
+$background-color: #f8f6fa;
+$shadow-color: #5d5d5d;
+$title-font: "Roboto", sans-serif;
+$text-font: "Open Sans", sans-serif;
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  font-family: $text-font;
+  color: $primary-color;
+  background-color: $background-color;
+  line-height: 1;
+}
+
+header {
+  width: 100%;
+
+  #language {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  img {
+    display: block;
+    width: 70%;
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: $title-font;
+    color: $third-color;
+    font-size: 2.4rem;
+    letter-spacing: -0.1rem;
+    margin: 0.3em 0.7em;
+  }
+}
+
+main {
+  width: 87%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+  form {
+
+    input, label {
+      cursor: pointer;
+    }
+
+    .question {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      border-radius: 10px;
+      background-color: $secondary-color;
+      box-shadow: 3px 3px 7px $shadow-color;
+
+      h2 {
+        margin-top: 0;
+        font-family: $title-font;
+      }
+
+    }
+
+    .answers {
+      width: 50px;
+      text-align: left;
+    }
+
+    .answers div:first-child {
+      margin-bottom: 0.5em;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 15px;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      color: #fff;
+      background-color: $primary-color;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 3px 3px 7px $shadow-color;
+      cursor: pointer;
+    }
+  }
+
+  #result {
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $primary-color;
+    box-shadow: 3px 3px 7px $shadow-color;
+
+    .result {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h2 {
+      margin: 0;
+      font-family: $title-font;
+      color: $secondary-color;
+    }
+
+    p {
+      line-height: 1.3rem;
+      color: $background-color;
+    }
+
+    .icons {
+      width: 120px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+      }
+
+      i {
+        font-size: 2rem;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  form {
+    margin-top: 0.8em;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}

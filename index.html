@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/images/avatar.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script src=https://kit.fontawesome.com/908b05fde3.js crossorigin="anonymous"></script>
+  <title>¿Deberías contratarme?</title>
+</head>
+<body>
+  <header>
+    <img id="language" src="/images/english.png" alt="English">
+    <img src="/images/avatar.svg" alt="Avatar de Nuria">
+    <h1>Contratarme o no contratarme, esa es la cuestión</h1>
+  </header>
+  <main>
+    <form id="question1">
+      <div class="question">
+        <h2>¿Buscas un empleado con inteligencia emocional para trabajar bien en equipo?</h2>
+        <div class="answers">
+          <div>
+            <input type="radio" name="q1" id="a1" value="1" checked>
+            <label for="a1">Sí</label>
+          </div>
+          <div>
+            <input type="radio" name="q1" id="a2" value="0">
+            <label for="a2">No</label>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Siguiente">
+    </form>
+    <form id="question2" class="hide">
+      <div class="question">
+        <h2>¿Quieres un empleado proactivo y que se adapte bien a los cambios?</h2>
+        <div class="answers">
+          <div>
+            <input type="radio" name="q2" id="a3" value="1" checked>
+            <label for="a3">Sí</label>
+          </div>
+          <div>
+            <input type="radio" name="q2" id="a4" value="0">
+            <label for="a4">No</label>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Siguiente">
+    </form>
+    <form id="question3" class="hide">
+      <div class="question">
+        <h2>¿Necesitas un empleado polifacético capaz de adquirir rápidamente nuevos conocimientos?</h2>
+        <div class="answers">
+          <div>
+            <input type="radio" name="q3" id="a5" value="1" checked>
+            <label for="a5">Sí</label>
+          </div>
+          <div>
+            <input type="radio" name="q3" id="a6" value="0">
+            <label for="a6">No</label>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="Siguiente">
+    </form>
+    <div id="result" class="hide">
+      <div class="result">
+        <h2>Resultado</h2>
+        <p>Explicación</p>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/nuriamartinezrodrigo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/nurimartinez" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a href="mailto:nuria.martinezro@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
