@@ -58,7 +58,7 @@ function showTheResult(score) {
       // English results
       if(score === 3) {
         resultTitle.textContent = 'You should hire me!';
-        resultParagraph.textContent = 'You are looking for what I can offer you. I would love to speak with you so you know all I can do for your company.';
+        resultParagraph.textContent = 'I am the type of employee you are looking for. I would love to speak with you so you know all I can do for your company.';
       } else if(score === 0) {
         resultTitle.textContent = 'Never say never!';
         resultParagraph.textContent = 'Maybe you did not have in mind hiring someone with my attitudes, but it could be nice to have a conversation and know each other. Who knows if you are about to meet your new employee?';
